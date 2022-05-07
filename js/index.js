@@ -5,6 +5,16 @@ const slider = document.querySelector(".slider-container");
 // const filter = document.querySelector(".engage_filter");
 const btnClose = document.querySelector(".close__btn");
 
+const sidebarLink = document.querySelector(".sidebar__nav-item");
+
+sidebarLink.addEventListener("click", function (e) {
+  sidebarLink.addClass("active");
+  e.preventDefault();
+  console.log(sidebarLink);
+});
+
+// console.log(sidebarLink);
+
 // btnClose.style.display = "none";
 
 // if ((engageLink.style.display = "block")) {

@@ -174,5 +174,26 @@
     }
   }
 }
-// @media (min-width: 1200px) {
-// }
+@media (min-width: 1700px) {
+  .hero {
+    .slider-container {
+      // custom padding not tachyons
+      &.pb6-xl {
+        padding-bottom: 9rem !important;
+      }
+      .slider {
+        width: 600px;
+      }
+    }
+    // custom max-width not tachyons
+    .mw7-xl {
+      max-width: 35rem;
+    }
+  }
+  // main {
+  //   .fixed__navigation {
+  //     background: $black;
+  //     padding: 32px 88px;
+  //   }
+  // }
+}

@@ -240,6 +240,11 @@ main .sidebar {
   main .sidebar li > a {
     color: #878f9c;
     font-family: clashgrotesk; }
+  main .sidebar li > a:hover {
+    color: #121212;
+    transition: 0.7s ease; }
+  main .sidebar li.active {
+    color: red; }
   main .sidebar .footer .heart {
     color: #ee7273; }
   main .sidebar .footer small a {
@@ -449,5 +454,12 @@ h1 {
       padding: 24px 80px 24px 0; }
     main .glossary__item-container .other__definition-container .card-content {
       padding: 24px 32px 24px 24px; } }
+@media (min-width: 1700px) {
+  .hero .slider-container.pb6-xl {
+    padding-bottom: 9rem !important; }
+  .hero .slider-container .slider {
+    width: 600px; }
+  .hero .mw7-xl {
+    max-width: 35rem; } }
 
 /*# sourceMappingURL=style.min.css.map */

@@ -339,6 +339,13 @@ main {
       color: $light-black;
       font-family: clashgrotesk;
     }
+    li > a:hover {
+      color: $black;
+      transition: 0.7s ease;
+    }
+    li.active {
+      color: red;
+    }
     // li > a:first-child {
     //   color: $black;
     // }

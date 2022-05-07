@@ -2,7 +2,7 @@ const exploreTermsBtn = document.querySelector(".explore");
 const sidebarNavItem = document.querySelector(".sidebar__nav-item1");
 // const terms = document.querySelector(".glossary__item-container");
 
-console.log(sidebarNavItem);
+// console.log(sidebarNavItem);
 
 exploreTermsBtn.addEventListener("click", (e) => {
   document.documentElement.scrollTo({
