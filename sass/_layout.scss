@@ -142,6 +142,10 @@ ul {
     .button--outline {
       width: -webkit-fill-available;
     }
+    .button:hover {
+      background: $black;
+      transition: all 0.2s linear 0s;
+    }
   }
 
   .slider-container {
@@ -326,7 +330,7 @@ main {
     }
     &.scroll::-webkit-scrollbar-track {
       margin-top: 10px;
-      margin-bottom: 200px;
+      margin-bottom: 80px;
     }
     ul {
       padding: 16px 16px 0 16px;
@@ -343,12 +347,11 @@ main {
       color: $black;
       transition: 0.7s ease;
     }
-    li.active {
-      color: red;
+
+    li > a:is(:link, :active, :visited).active {
+      color: black;
     }
-    // li > a:first-child {
-    //   color: $black;
-    // }
+
     .footer {
       .heart {
         color: #ee7273;
@@ -410,6 +413,11 @@ main {
         color: #333333;
         font-weight: 600;
         text-decoration: none;
+      }
+      a:hover {
+        color: black;
+        font-weight: 600;
+        text-decoration: underline;
       }
     }
     .engage-img {
@@ -507,6 +515,14 @@ main {
         i {
           padding-left: 8px;
         }
+      }
+      .card-link:hover {
+        color: black;
+      }
+      .card-link:hover > i {
+        // transform: rotate(-30deg);
+        padding-left: 14px;
+        transition: all 0.2s linear 0s;
       }
     }
   }

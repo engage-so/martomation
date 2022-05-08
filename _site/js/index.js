@@ -4,16 +4,15 @@ const btnSlider = document.querySelector(".button--outline");
 const slider = document.querySelector(".slider-container");
 // const filter = document.querySelector(".engage_filter");
 const btnClose = document.querySelector(".close__btn");
+const hero = document.querySelector(".hero");
 
 const sidebarLink = document.querySelector(".sidebar__nav-item");
 
-sidebarLink.addEventListener("click", function (e) {
-  sidebarLink.addClass("active");
-  e.preventDefault();
-  console.log(sidebarLink);
-});
+// sidebarLink.addEventListener("click", function (e) {
+//   hero.style.display = "none";
 
-// console.log(sidebarLink);
+//   e.preventDefault();
+// });
 
 // btnClose.style.display = "none";
 
@@ -42,4 +41,15 @@ btnClose.addEventListener("click", function (e) {
   // engage.style.display = "block"
   btnClose.style.display = "none";
   e.preventDefault();
+});
+
+// sidebar links active state
+const activePage = window.location.pathname;
+const navlinks = document.querySelectorAll("nav ul li a").forEach((link) => {
+  if (link.href.includes(`${activePage}`)) {
+    link.classList.add("active");
+    // hero.style.display = "none";
+    // hero.style.visibility = "hidden";
+    // hero.style.opacity = 0;
+  }
 });

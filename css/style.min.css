@@ -116,6 +116,9 @@ ul {
   .hero .hero__text .button, .hero .hero__text .button--md, .hero .hero__text .button--outline,
   .hero .hero__text .button--outline {
     width: -webkit-fill-available; }
+  .hero .hero__text .button:hover, .hero .hero__text .button--md:hover, .hero .hero__text .button--outline:hover {
+    background: #121212;
+    transition: all 0.2s linear 0s; }
   .hero .slider-container {
     background: #1e90ff;
     width: 100%;
@@ -232,7 +235,7 @@ main .sidebar {
     background: #bdbdbd; }
   main .sidebar.scroll::-webkit-scrollbar-track {
     margin-top: 10px;
-    margin-bottom: 200px; }
+    margin-bottom: 80px; }
   main .sidebar ul {
     padding: 16px 16px 0 16px; }
   main .sidebar .footer {
@@ -243,8 +246,8 @@ main .sidebar {
   main .sidebar li > a:hover {
     color: #121212;
     transition: 0.7s ease; }
-  main .sidebar li.active {
-    color: red; }
+  main .sidebar li > a:is(:link, :active, :visited).active {
+    color: black; }
   main .sidebar .footer .heart {
     color: #ee7273; }
   main .sidebar .footer small a {
@@ -278,6 +281,10 @@ main .glossary__item-container {
     color: #333333;
     font-weight: 600;
     text-decoration: none; }
+  main .glossary__item-container .engage-logo a:hover {
+    color: black;
+    font-weight: 600;
+    text-decoration: underline; }
   main .glossary__item-container .engage-img {
     padding-top: 32px; }
   main .glossary__item-container .engage-annotation {
@@ -336,6 +343,11 @@ main .glossary__item-container {
       padding-top: 16px; }
       main .glossary__item-container .other__definition-container .card-link i {
         padding-left: 8px; }
+    main .glossary__item-container .other__definition-container .card-link:hover {
+      color: black; }
+    main .glossary__item-container .other__definition-container .card-link:hover > i {
+      padding-left: 14px;
+      transition: all 0.2s linear 0s; }
 
 h1 {
   color: #121212; }
@@ -419,8 +431,8 @@ h1 {
     top: 0;
     left: unset; }
     main .sidebar.scroll::-webkit-scrollbar-track {
-      margin-top: 10px;
-      margin-bottom: 400px; }
+      margin-top: 0px;
+      margin-bottom: 150px; }
     main .sidebar ul {
       padding: 56px 8px 0 56px; }
     main .sidebar .footer {
@@ -445,7 +457,7 @@ h1 {
 
   main .sidebar {
     position: sticky;
-    top: 6rem;
+    top: 5rem;
     left: 0; }
   main .glossary__item-container {
     padding: 56px 56px 80px 80px;
