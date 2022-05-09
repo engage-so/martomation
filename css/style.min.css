@@ -375,28 +375,16 @@ h1 {
     font-size: 1.5rem;
     line-height: 2.1875rem; }
 
-  h6 {
-    font-size: 1.25rem;
-    line-height: 2.1875rem; }
-
-  p {
-    font-size: 1rem;
-    line-height: 1.5rem; }
-
   .button.button-mobile, .button-mobile.button--md, .button-mobile.button--outline {
     padding: 12px 36px; }
 
   .hero {
     padding: 56px; }
-    .hero .hero__text .hero__description {
-      color: #626f84;
-      font-family: inter; }
     .hero .hero__text .button, .hero .hero__text .button--md, .hero .hero__text .button--outline {
       width: max-content;
       margin-left: auto;
       margin-right: auto; }
     .hero .slider-container {
-      background: #1e90ff;
       max-height: 800px;
       height: 100%;
       width: 100%;
@@ -406,25 +394,10 @@ h1 {
         width: 500px; }
 
   main .fixed__navigation {
-    background: #121212;
-    padding: 32px 56px;
-    position: sticky;
-    position: -webkit-sticky;
-    position: -moz-sticky;
-    position: -ms-sticky;
-    position: -o-sticky;
-    top: 0; }
-    main .fixed__navigation .fixed__navigation-text > span {
-      color: #d7d9e8; }
+    padding: 32px 56px; }
     main .fixed__navigation .hamburger-menu {
       right: 56px;
-      top: 36px;
-      transition: all 0.7s ease; }
-      main .fixed__navigation .hamburger-menu .bar {
-        width: 30px;
-        height: 3px;
-        background: white;
-        transition: all 0.3s ease; }
+      top: 36px; }
   main .sidebar {
     background: #fafcff;
     position: absolute;

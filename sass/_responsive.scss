@@ -30,17 +30,6 @@
     line-height: 2.1875rem;
   }
 
-  // 20x
-  h6 {
-    font-size: 1.25rem;
-    line-height: 2.1875rem;
-  }
-
-  // 16px
-  p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
   .button.button-mobile {
     padding: 12px 36px;
   }
@@ -48,10 +37,6 @@
   .hero {
     padding: 56px;
     .hero__text {
-      .hero__description {
-        color: $mid-black;
-        font-family: inter;
-      }
       .button {
         width: max-content;
         margin-left: auto;
@@ -60,7 +45,6 @@
     }
 
     .slider-container {
-      background: $blue;
       max-height: 800px;
       height: 100%;
       width: 100%;
@@ -73,27 +57,11 @@
   }
   main {
     .fixed__navigation {
-      background: $black;
       padding: 32px 56px;
-      position: sticky;
-      position: -webkit-sticky;
-      position: -moz-sticky;
-      position: -ms-sticky;
-      position: -o-sticky;
-      top: 0;
-      .fixed__navigation-text > span {
-        color: #d7d9e8;
-      }
+
       .hamburger-menu {
         right: 56px;
         top: 36px;
-        transition: all 0.7s ease;
-        .bar {
-          width: 30px;
-          height: 3px;
-          background: white;
-          transition: all 0.3s ease;
-        }
       }
     }
     .sidebar {
