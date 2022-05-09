@@ -48,8 +48,10 @@ const activePage = window.location.pathname;
 const navlinks = document.querySelectorAll("nav ul li a").forEach((link) => {
   if (link.href.includes(`${activePage}`)) {
     link.classList.add("active");
-    // hero.style.display = "none";
-    // hero.style.visibility = "hidden";
-    // hero.style.opacity = 0;
+    hero.style.display = "none";
+    hero.style.visibility = "hidden";
+    hero.style.opacity = 0;
+  } else if (link.href.includes("/")) {
+    link.classList.remove("active");
   }
 });
