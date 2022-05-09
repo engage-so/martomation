@@ -278,6 +278,10 @@ main {
     .fixed__navigation-text > span {
       color: #d7d9e8;
     }
+    .fixed__navigation-text > a {
+      display: inline-flex;
+      align-items: center;
+    }
     .hamburger-menu {
       // position: absolute;
       // cursor: pointer;

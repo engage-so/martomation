@@ -201,6 +201,9 @@ main .fixed__navigation {
   top: 0; }
   main .fixed__navigation .fixed__navigation-text > span {
     color: #d7d9e8; }
+  main .fixed__navigation .fixed__navigation-text > a {
+    display: inline-flex;
+    align-items: center; }
   main .fixed__navigation .hamburger-menu {
     position: absolute;
     right: 16px;

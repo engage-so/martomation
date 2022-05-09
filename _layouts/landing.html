@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Primary Meta Tags -->
-    <title></title>
-    <meta name="title" content="" />
-    <meta name="description" content="" />
+    <title>{{page.title}}</title>
+    <meta name="title" content="{{page.title}}" />
+    <meta name="description" content="{{page.description}}" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
     <link rel="stylesheet" href="/css/tachyons.min.css" />
     <link rel="stylesheet" href="/css/style.min.css" />
-    <link rel="canonical" href="https://martomation.com/" />
+    <link rel="canonical" href="https://martomation.com{{ page.url | replace:'index.html','' | replace: '.html', '' }}" />
     <link rel="icon" type="image/png" href="/assets/img/favicon.svg" />
   </head>
 
