@@ -205,25 +205,23 @@ main .fixed__navigation {
     display: inline-flex;
     align-items: center; }
   main .fixed__navigation .hamburger-menu {
+    cursor: pointer;
     position: absolute;
     right: 16px;
-    top: 42px;
-    transform: translate(-5%, -50%);
-    z-index: 2;
-    transition: all 0.7s ease; }
-    main .fixed__navigation .hamburger-menu div {
+    z-index: 2; }
+    main .fixed__navigation .hamburger-menu .bar {
       width: 30px;
       height: 3px;
       background: white;
       margin-bottom: 5px;
-      transition: all 0.3s ease; }
-    main .fixed__navigation .hamburger-menu .toggle .line1 {
-      transform: rotate(-45deg) translate(-5px, 6px); }
-    main .fixed__navigation .hamburger-menu .toggle .line2 {
-      transition: all 0.7s ease;
-      width: 0; }
-    main .fixed__navigation .hamburger-menu .toggle .line3 {
-      transform: rotate(45deg) translate(-5px, -6px); }
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease; }
+    main .fixed__navigation .hamburger-menu.hamburger-menu.active .bar:nth-child(2) {
+      opacity: 0; }
+    main .fixed__navigation .hamburger-menu.hamburger-menu.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg); }
+    main .fixed__navigation .hamburger-menu.hamburger-menu.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg); }
 main .sidebar {
   overflow-y: scroll;
   height: calc(100vh - 70px);
@@ -262,7 +260,8 @@ main .glossary__item-container {
     border-color: #f2f4f7; }
   main .glossary__item-container .engage {
     padding-bottom: 24px;
-    border-bottom: 2px solid #f2f4f7; }
+    border-bottom: 2px solid #f2f4f7;
+    padding-top: 8px; }
   main .glossary__item-container .engage-title {
     font-weight: 600; }
   main .glossary__item-container .engage-content {
@@ -419,10 +418,9 @@ h1 {
       color: #d7d9e8; }
     main .fixed__navigation .hamburger-menu {
       right: 56px;
-      top: 46px;
-      transform: translate(-5%, -50%);
+      top: 36px;
       transition: all 0.7s ease; }
-      main .fixed__navigation .hamburger-menu .line {
+      main .fixed__navigation .hamburger-menu .bar {
         width: 30px;
         height: 3px;
         background: white;

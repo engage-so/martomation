@@ -4,8 +4,8 @@ const sidebarMobile = document.querySelector(".sidebar");
 
 hamburgerMenu.addEventListener("click", () => {
   hamburgerMenu.classList.toggle("toggle");
+  hamburgerMenu.classList.toggle("active");
   sidebarMobile.classList.toggle("dn");
   sidebarMobile.classList.toggle("dn-m");
   sidebarMobile.classList.toggle("db-l");
-  sidebarMobile.classList.toggle("scale-in-center");
 });

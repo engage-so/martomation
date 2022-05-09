@@ -23,9 +23,7 @@ body {
   margin: 0;
   padding: 0;
 }
-// html {
-//   scroll-behavior: smooth;
-// }
+
 body {
   font-family: inter;
 }
@@ -86,12 +84,6 @@ small {
   line-height: 0.875rem;
   color: $black;
 }
-// 18px
-// span {
-//   font-size: 1.125rem;
-//   line-height: 1.875rem;
-//   color: #425066;
-// }
 
 h1,
 h2,
@@ -115,7 +107,6 @@ ul {
   padding: 18px 22px;
   background: $blue;
   font-size: 1.125rem;
-  // width: max-content;
 }
 .button.button-mobile {
   padding: 12px 24px;
@@ -150,8 +141,6 @@ ul {
 
   .slider-container {
     background: $blue;
-    // max-height: 800px;
-    // height: 100%;
     width: 100%;
     position: absolute;
     z-index: 9999;
@@ -201,26 +190,14 @@ ul {
       }
       .slide__descriptionheading {
         font-size: 1.125rem;
-        // padding-top: 1.25rem;
         font-family: clashgrotesk;
-        // -moz-padding-top: 1rem;
         -moz-webkit-padding-before: 0px;
       }
       .slide__paragraph {
         color: #eef6fd;
         font-size: 1.125rem;
       }
-      // .slide__author > p {
-      //   font-size: 1.25rem;
-      // }
     }
-
-    // .slick-slide {
-    //   /* background: #3a8999; */
-    //   /* color: white; */
-    //   /* padding: 80px 0 120px; */
-    //   /* font-size: 30px; */
-    // }
 
     .slick-prev:before,
     .slick-next:before {
@@ -283,40 +260,30 @@ main {
       align-items: center;
     }
     .hamburger-menu {
-      // position: absolute;
-      // cursor: pointer;
-      // right: 5%;
-      // top: 38px;
+      cursor: pointer;
       position: absolute;
       right: 16px;
-      top: 42px;
-      transform: translate(-5%, -50%);
       z-index: 2;
-      transition: all 0.7s ease;
-      div {
+      .bar {
         width: 30px;
         height: 3px;
         background: white;
         margin-bottom: 5px;
         transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
       }
-      .toggle .line1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
+      &.hamburger-menu.active .bar:nth-child(2) {
+        opacity: 0;
       }
-
-      .toggle .line2 {
-        transition: all 0.7s ease;
-        width: 0;
+      &.hamburger-menu.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
       }
-
-      .toggle .line3 {
-        transform: rotate(45deg) translate(-5px, -6px);
+      &.hamburger-menu.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
       }
     }
   }
   .sidebar {
-    // width: 100%;
-    // height: 100vh;
     overflow-y: scroll;
     height: calc(100vh - 70px);
     background: $grey;
@@ -326,7 +293,6 @@ main {
     &.scroll::-webkit-scrollbar {
       display: block;
       width: 4px;
-      // height: 10px;
     }
 
     &.scroll::-webkit-scrollbar-thumb {
@@ -371,13 +337,13 @@ main {
   .glossary__item-container {
     padding: 24px 16px 24px 16px;
     width: 100%;
-    // z-index: -90;
     .border-midblack {
       border-color: $border-midblack;
     }
     .engage {
       padding-bottom: 24px;
       border-bottom: 2px solid $border-midblack;
+      padding-top: 8px;
     }
     .engage-title {
       font-weight: 600;
@@ -400,18 +366,13 @@ main {
         }
       }
     }
-    // .engage-content > span:not(:first-child) {
-    //   margin-top: 16px;
-    // }
 
     .engage-content > p {
       font-size: 1.125rem;
       line-height: 1.875rem;
       padding-top: 16px;
     }
-    // .engage-content > p {
-    //   font-size: 1.125rem;
-    // }
+
     .engage-logo {
       a {
         color: #333333;
@@ -454,17 +415,13 @@ main {
         background: $bg-blue;
         margin-top: 24px;
         padding: 24px;
-        // width: 100vw;
-        // margin: 0 calc(-50vw + 50%);
       }
       .card__group {
         &:not(:last-child) {
           margin-bottom: 64px;
         }
       }
-      // :not(.card__group:first-child, .card__wrapper, .card-title, .card-content, .card-link) {
-      //   margin-top: 48px;
-      // }
+
       .card-title {
         color: $black;
         font-weight: 600;
@@ -484,11 +441,6 @@ main {
         padding-left: 0;
         padding-top: 8px;
       }
-
-      // li {
-      //   padding-left: 1em;
-      //   text-indent: -1em;
-      // }
 
       li:before {
         content: "-";
@@ -524,7 +476,6 @@ main {
         color: black;
       }
       .card-link:hover > i {
-        // transform: rotate(-30deg);
         padding-left: 14px;
         transition: all 0.2s linear 0s;
       }
@@ -535,21 +486,3 @@ main {
 h1 {
   color: $black;
 }
-
-// .nav__container {
-
-// }
-
-// position: fixed;
-//
-//     display: block;
-//     z-index: 1;
-//     overflow: auto;
-//     height: 100%;
-//     top: 88px;
-//     left: 0;
-
-// position: sticky;
-//     top: 6rem;
-//     left: 0;
-//     z-index: -1;

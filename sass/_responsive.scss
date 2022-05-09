@@ -66,8 +66,6 @@
       width: 100%;
       position: unset;
       z-index: unset;
-      // visibility: visible;
-      // overflow-y: scroll;
       .slider {
         width: 500px;
       }
@@ -88,22 +86,18 @@
       }
       .hamburger-menu {
         right: 56px;
-        top: 46px;
-        transform: translate(-5%, -50%);
-        // z-index: 2;
+        top: 36px;
         transition: all 0.7s ease;
-        .line {
+        .bar {
           width: 30px;
           height: 3px;
           background: white;
-          // margin: 5px;
           transition: all 0.3s ease;
         }
       }
     }
     .sidebar {
       background: $grey;
-      // z-index: -50;
       position: absolute;
       right: 0;
       top: 0;
@@ -129,8 +123,6 @@
         .card__wrapper {
           margin-top: 24px;
           padding: 40px;
-          // width: 0;
-          // margin: 0 calc(50vw + 50%);
         }
         .card-content {
           padding: 24px;
@@ -190,9 +182,4 @@
       max-width: 35rem;
     }
   }
-  // main {
-  //   .sidebar {
-  //     top: 5.5rem;
-  //   }
-  // }
 }
