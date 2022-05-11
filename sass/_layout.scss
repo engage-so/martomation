@@ -16,6 +16,7 @@ $border-midblack: #f2f4f7;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  margin: 0;
 }
 
 html,
@@ -308,6 +309,7 @@ main {
 
     .footer {
       padding: 16px;
+      font-family: clashgrotesk;
     }
     li > a {
       color: $light-black;
@@ -343,7 +345,7 @@ main {
     .engage {
       padding-bottom: 24px;
       border-bottom: 2px solid $border-midblack;
-      padding-top: 8px;
+      padding-top: 24px;
     }
     .engage-title {
       font-weight: 600;
@@ -378,6 +380,7 @@ main {
         color: #333333;
         font-weight: 600;
         text-decoration: none;
+        font-family: clashgrotesk;
       }
       a:hover {
         color: black;
@@ -467,6 +470,7 @@ main {
         display: flex;
         align-items: center;
         padding-top: 16px;
+        font-family: clashgrotesk;
 
         i {
           padding-left: 8px;

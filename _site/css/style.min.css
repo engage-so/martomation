@@ -24,7 +24,8 @@
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+  margin: 0; }
 
 html,
 body {
@@ -240,7 +241,8 @@ main .sidebar {
   main .sidebar ul {
     padding: 16px 16px 0 16px; }
   main .sidebar .footer {
-    padding: 16px; }
+    padding: 16px;
+    font-family: clashgrotesk; }
   main .sidebar li > a {
     color: #878f9c;
     font-family: clashgrotesk; }
@@ -261,7 +263,7 @@ main .glossary__item-container {
   main .glossary__item-container .engage {
     padding-bottom: 24px;
     border-bottom: 2px solid #f2f4f7;
-    padding-top: 8px; }
+    padding-top: 24px; }
   main .glossary__item-container .engage-title {
     font-weight: 600; }
   main .glossary__item-container .engage-content {
@@ -282,7 +284,8 @@ main .glossary__item-container {
   main .glossary__item-container .engage-logo a {
     color: #333333;
     font-weight: 600;
-    text-decoration: none; }
+    text-decoration: none;
+    font-family: clashgrotesk; }
   main .glossary__item-container .engage-logo a:hover {
     color: black;
     font-weight: 600;
@@ -342,7 +345,8 @@ main .glossary__item-container {
       font-weight: 600;
       display: flex;
       align-items: center;
-      padding-top: 16px; }
+      padding-top: 16px;
+      font-family: clashgrotesk; }
       main .glossary__item-container .other__definition-container .card-link i {
         padding-left: 8px; }
     main .glossary__item-container .other__definition-container .card-link:hover {
@@ -413,6 +417,8 @@ h1 {
       padding: 56px 8px 40px 56px; }
   main .glossary__item-container {
     padding: 56px; }
+    main .glossary__item-container .engage {
+      padding-top: 8px; }
     main .glossary__item-container .engage-content {
       padding: 16px 80px 16px 0; }
     main .glossary__item-container .other__definition-container .card__wrapper {
