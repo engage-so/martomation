@@ -147,7 +147,7 @@ ul {
     z-index: 9999;
     height: 100vh;
     max-height: 100vh;
-    top: 90px;
+    top: 60px;
     left: 0;
     right: 0;
     max-width: 100%;
@@ -370,6 +370,7 @@ main {
           font-weight: 600;
         }
       }
+     
     }
 
     .engage-content > p {
@@ -377,6 +378,7 @@ main {
       line-height: 1.875rem;
       padding-top: 16px;
     }
+     
 
     .engage-logo {
       a {
@@ -392,13 +394,17 @@ main {
       }
     }
     .engage-img {
-      padding-top: 32px;
+      padding-bottom: 32px;
+      &.custom-padding {
+        padding-bottom:0
+      }
     }
     .engage-annotation {
       font-size: 0.875rem;
       line-height: 1.3rem;
       color: $mid-black;
       padding-top: 8px;
+      padding-bottom:16px;
     }
     li:before {
       // content: "-";
@@ -439,6 +445,13 @@ main {
         border-radius: 4px;
         p:not(:first-child) {
           padding-top: 16px;
+        }
+        p {
+          a{
+            color: $mid-black;
+            text-decoration: underline;
+            font-weight:500;
+          }
         }
       }
       ul {
