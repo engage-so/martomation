@@ -152,6 +152,7 @@ ul {
     right: 0;
     max-width: 100%;
     overflow: hidden;
+    // overflow-y: scroll;
     .progressBarContainer div {
       display: block;
       width: 30%;
@@ -289,7 +290,7 @@ main {
   }
   .sidebar {
     overflow-y: scroll;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 90px);
     background: $grey;
     position: sticky;
     top: 5rem;
@@ -370,7 +371,6 @@ main {
           font-weight: 600;
         }
       }
-     
     }
 
     .engage-content > p {
@@ -378,7 +378,6 @@ main {
       line-height: 1.875rem;
       padding-top: 16px;
     }
-     
 
     .engage-logo {
       a {
@@ -396,7 +395,7 @@ main {
     .engage-img {
       padding-bottom: 32px;
       &.custom-padding {
-        padding-bottom:0
+        padding-bottom: 0;
       }
     }
     .engage-annotation {
@@ -404,7 +403,7 @@ main {
       line-height: 1.3rem;
       color: $mid-black;
       padding-top: 8px;
-      padding-bottom:16px;
+      padding-bottom: 16px;
     }
     li:before {
       // content: "-";
@@ -447,10 +446,10 @@ main {
           padding-top: 16px;
         }
         p {
-          a{
+          a {
             color: $mid-black;
             text-decoration: underline;
-            font-weight:500;
+            font-weight: 500;
           }
         }
       }

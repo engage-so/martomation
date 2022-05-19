@@ -65,8 +65,9 @@
       }
     }
     .sidebar {
-      background: $grey;
+      height: calc(100vh - 70px);
       position: absolute;
+
       right: 0;
       top: 0;
       left: unset;
