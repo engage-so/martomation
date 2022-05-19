@@ -131,7 +131,8 @@ ul {
     left: 0;
     right: 0;
     max-width: 100%;
-    overflow: hidden; }
+    overflow: hidden;
+    visibility: hidden; }
     .hero .slider-container .progressBarContainer div {
       display: block;
       width: 30%;
@@ -400,7 +401,8 @@ h1 {
       height: 100%;
       width: 100%;
       position: unset;
-      z-index: unset; }
+      z-index: unset;
+      visibility: visible; }
       .hero .slider-container .slider {
         width: 500px; }
 
