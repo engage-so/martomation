@@ -143,16 +143,31 @@
   .hero {
     .slider-container {
       // custom padding not tachyons
-      &.pb6-xl {
-        padding-bottom: 9rem !important;
-      }
+      // &.pb6-xl {
+      //   padding-bottom: 11rem !important;
+      // }
       .slider {
         width: 600px;
+        .slide__author {
+          padding-top: 10rem;
+        }
       }
     }
     // custom max-width not tachyons
     .mw7-xl {
       max-width: 35rem;
+    }
+  }
+}
+
+@media (min-width: 1900px) {
+  .hero {
+    .slider-container {
+      .slider {
+        .slide__author {
+          padding-top: 16rem;
+        }
+      }
     }
   }
 }

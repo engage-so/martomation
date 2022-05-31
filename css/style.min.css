@@ -456,11 +456,14 @@ h1 {
     main .glossary__item-container .other__definition-container .card-content {
       padding: 24px 32px 24px 24px; } }
 @media (min-width: 1700px) {
-  .hero .slider-container.pb6-xl {
-    padding-bottom: 9rem !important; }
   .hero .slider-container .slider {
     width: 600px; }
+    .hero .slider-container .slider .slide__author {
+      padding-top: 10rem; }
   .hero .mw7-xl {
     max-width: 35rem; } }
+@media (min-width: 1900px) {
+  .hero .slider-container .slider .slide__author {
+    padding-top: 16rem; } }
 
 /*# sourceMappingURL=style.min.css.map */
